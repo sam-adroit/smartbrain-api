@@ -12,11 +12,8 @@ const image = require('./controllers/imageurl');
 const db = require('knex')({
     client: 'pg',
     connection: {
-      host : 'postgresql-metric-59372',
-      port : 5432,
-      user : 'postgres',
-      password : 'Success123!',
-      database : 'smartbrain'
+      host : process.env.DATABASE_URL,
+      ssl: true
     }
 });
 
