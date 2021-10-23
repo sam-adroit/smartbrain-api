@@ -12,7 +12,7 @@ const image = require('./controllers/imageurl');
 const db = require('knex')({
     client: 'pg',
     connection: {
-      host : '127.0.0.1',
+      host : 'postgresql-metric-59372',
       port : 5432,
       user : 'postgres',
       password : 'Success123!',
